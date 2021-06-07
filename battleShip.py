@@ -28,8 +28,8 @@ def BattleShip(size):
     Shipsink = False
     playerGrid = [['?'] * size for i in range(size)]
     while playing == True:
-        x = int(input("Choose an x coordinate to fire: ")) - 1
-        y = int(input("Choose a y coordinate to fire: ")) - 1
+        x = int(input("Choose a column to fire in (number): ")) - 1
+        y = int(input("Choose a row to fire in (letter): ")) - 1
         
         
         if x > 9 or x < 0 or y > 9 or y < 0:
